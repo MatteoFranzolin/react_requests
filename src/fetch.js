@@ -1,9 +1,9 @@
-import './App.css';
+import './styles.css';
 import React, {useState, useEffect} from 'react';
 
 const serverAddress = '127.0.0.1:8081';
 
-const Request = () => {
+const FetchRequest = () => {
     const [data, setData] = useState(null); //data viene inizialmente settato a null, setData = funzione che ne aggiorna lo stato
     const [loading, setLoading] = useState(true); //loading viene inizialmente settato a true, setLoading = funzione che ne aggiorna lo stato
     const [error, setError] = useState(null);//error viene inizialmente settato a null, setError = funzione che ne aggiorna lo stato
@@ -28,7 +28,6 @@ const Request = () => {
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error.message}</div>;
-    console.log(data);
     if (!data) return <div>No data available</div>;
 
     return (
@@ -44,4 +43,4 @@ const Request = () => {
 };
 
 
-export default Request;
+export default FetchRequest;

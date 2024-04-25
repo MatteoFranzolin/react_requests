@@ -1,0 +1,16 @@
+.box {
+  width: 200px; /* larghezza del box */
+  height: 200px; /* altezza del box */
+  background-color: #f0f0f0; /* colore di sfondo */
+  border: 1px solid #ccc; /* bordo con spessore 1px e colore grigio chiaro */
+  border-radius: 8px; /* bordi arrotondati */
+  padding: 20px; /* spazio interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra */
+}
+
+/* Stile per il testo all'interno del box */
+.box p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
